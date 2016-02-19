@@ -1,6 +1,15 @@
 var fs = require('fs');
 var obj = JSON.parse(fs.readFileSync('secret', 'utf8'));
 
+/*
+obj = {
+  type: "messenger",
+  email: "mail@example.com",
+  password: "hunter2"
+}
+*/
+
+
 module.exports = {
 	"facebook": obj,
   "my_bouncer": {
